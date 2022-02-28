@@ -12,10 +12,13 @@ html, body {
     height: 100%;
     width: 100%;
 
-    background-color: var(--background);
+    background-color: #181818;
 }
 
 * {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    list-style: none;
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
@@ -23,32 +26,143 @@ html, body {
 
 header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: var(--black);
     color: white;
     padding: 16px;
+    justify-content: space-between;
 }
+
+#container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#profile {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+#profile .icon {
+    display: none;
+}
+
+#profile h2 {
+    display: none;
+}
+
+/* 
+    Icon 
+*/
+
+.pfp {
+    width: 40px;
+    height: 40px;
+
+    outline: 0px solid var(--white-20);
+
+    border-radius: 999px;
+}
+
+/* 
+    Text
+*/
+
+
+
+/* 
+    Navigation
+*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,1);
+    right: 0px;
+    position: absolute; 
+    text-align: right; 
+    text-align: center;
+    /* width: 100vw;
+    height: 100vh; */
+    font-size: 22px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.options {
+    color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    transition: 0.35s;
+}
+
+/* .options:hover {
+    color: rgba(255, 255, 255, 1);
+    padding-left: 30px;
+} */
+
+/*
+    card
+*/
+
+#wrapper-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    padding: 16px;
+    color: white;
+
+    max-height: 400px;
+    min-width: 300px;
+    /* flex-shrink: 1;
+    flex-grow: 1; */
+    border-radius: 15px;
+
+    transition: 0.2s;
+}
+
+/* .card:hover {
+    opacity: 0.8;
+} */
 
 .background {
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.card {
-    padding: 16px;
-
-    color: white;
-
-    border-radius: 15px;
-
-    transition: 0.2s;
+.artwork1 {
+    background-color: greenyellow;
+    /* background-image: url(../img/space-background.jpg); */
 }
 
-.options {
-    color: rgba(255, 255, 255, 0.7);
+.artwork2 {
+    background-color: greenyellow;
+    background-image: url();
 }
 
-#profile {
-    color: white;
-    display: none;
+.artwork3 {
+    background-color: greenyellow;
+    background-image: url();
 }
