@@ -25,20 +25,33 @@ html, body {
 }
 
 header {
+    grid-area: he;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: var(--black);
     color: white;
     padding: 16px;
-    justify-content: space-between;
 }
 
-#container {
+.gridwrap-active {
+    
+}
+
+.gridwrap {
+    display: grid;
     height: 100%;
     width: 100%;
-    flex-direction: column;
     overflow: hidden;
+    grid-template-areas: 
+    "he he"
+    "ca na"
+    ;
+    grid-template-columns: 100vw;
+}
+
+.gridtoggle {
+    grid-template-columns: auto 200px;
 }
 
 #wrapper {
@@ -52,6 +65,7 @@ header {
     color: white;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
 }
 
 #profile .icon {
@@ -66,6 +80,35 @@ header {
     Icon 
 */
 
+.burger {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 34px;
+    height: 4px;
+    background-color: white;
+    margin: 8px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.toggle #line2 {
+    opacity: 0;
+}
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-11px, 6px);
+}
+
+.toggle #line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
 .pfp {
     width: 40px;
     height: 40px;
@@ -79,26 +122,42 @@ header {
     Text
 */
 
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
 
+h1 {
+
+}
 
 /* 
     Navigation
 */
 
 nav {
+    grid-area: na;
     display: flex;
     flex-direction: column;
     background-color: rgba(0,0,0,1);
-    right: 0px;
-    position: absolute; 
-    text-align: right; 
+    position: relative; 
     text-align: center;
-    /* width: 100vw;
-    height: 100vh; */
+    align-items: center;
+    width: 200px;
+    right: -200px;
+    height: 100vh;
     font-size: 22px;
+    transition: all 0.3s;
 }
 
-ul {
+.nav-active {
+    transform: translateX(-200px);
+}
+
+.nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -122,6 +181,7 @@ ul {
 */
 
 #wrapper-card {
+    grid-area: ca;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,8 +196,8 @@ ul {
 
     max-height: 400px;
     min-width: 300px;
-    /* flex-shrink: 1;
-    flex-grow: 1; */
+    flex-shrink: 1;
+    flex-grow: 1;
     border-radius: 15px;
 
     transition: 0.2s;
