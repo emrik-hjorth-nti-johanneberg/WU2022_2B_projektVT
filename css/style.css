@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
+    right: 0;
 }
 
 html, body {
@@ -34,8 +35,9 @@ html, body {
             height: 69px;
             position: fixed;
             top: 0px;
-            width: 100vw;
+            width: 100%;
             z-index: 2;
+            margin: 0px;
         }
 
             .title {
@@ -64,7 +66,7 @@ html, body {
             position: fixed;
             text-align: center;
             align-items: center;
-            width: 100vw;
+            width: 100%;
             top: -100vh;
             height: calc(100% - 69px);
             font-size: 22px;
@@ -142,7 +144,7 @@ html, body {
     color: white;
 
     max-height: 400px;
-    min-width: 300px;
+    min-width: 250px;
     flex-shrink: 1;
     flex-grow: 1;
     border-radius: 15px;
@@ -240,10 +242,6 @@ html, body {
 /* header {} */
 
 /* .gridwrap {} */
-
-.gridtoggle {
-    
-}
 
 /* #profile {} */
 
