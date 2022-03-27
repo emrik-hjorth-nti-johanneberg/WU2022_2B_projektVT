@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     right: 0;
-    /* font-family: 'San Francisco', Helvetica, Arial, san-serif; */ #funkar typ inte
+    /* font-family: 'San Francisco', Helvetica, Arial, san-serif;  #funkar typ inte */
 }
 
 html, body {
@@ -17,11 +17,11 @@ html, body {
     
 }
 
-    .gridwrap {
+    #gridwrap {
         display: flex;
         height: calc(100% - 69px);
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         flex-direction: column;
         padding-top: 69px;
     }
@@ -68,7 +68,7 @@ html, body {
             align-items: center;
             width: 100%;
             top: -100vh;
-            height: calc(100% - 69px);
+            height: calc(100vh - 69px);
             font-size: 22px;
             transition: 0.5s;
             z-index: 1;
@@ -157,27 +157,27 @@ html, body {
     background-position: center;
 }
 
-.artwork1 {
+.artcard1 {
     background-color: crimson;
     /* background-image: url(../img/space-background.jpg); */
 }
 
-.artwork2 {
+.artcard2 {
     background-color: crimson;
     background-image: url();
 }
 
-.artwork3 {
+.artcard3 {
     background-color: crimson;
     background-image: url();
 }
 
-.artwork4 {
+.artcard4 {
     background-color: crimson;
     background-image: url();
 }
 
-.artwork5 {
+.artcard5 {
     background-color: crimson;
     background-image: url();
 }
@@ -196,6 +196,33 @@ html, body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.artlist {
+    display: none;
+}
+
+.moreart {
+    display: none;
+}
+
+.artcontainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+    #artwork {
+        box-shadow: 10px 10px 18px 0 #0d0c11, -10px 10px 18px 0 #0d0c11;
+        width: ;
+        height:fit-content;
+    }
+    
+.desccontainer {
+    top: 100vh;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100px;
+}
 
 
 /* footer{
@@ -274,35 +301,9 @@ html, body {
     margin: 0;
 }
 
-/* header {} */
-
-/* .gridwrap {} */
-
-/* #profile {} */
-
-/* 
-    Icon 
-*/
-
 .burger:hover {
     cursor: pointer;
 }
-
-/* .burger div {} */
-
-/* .toggle #line2 {
-    opacity: 0;
-}
-
-.toggle #line1 {
-    transform: rotate(-45deg) translate(-11px, 6px);
-}
-
-.toggle #line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-} */
-
-
 
 .pfp {
     width: 40px;
@@ -312,20 +313,6 @@ html, body {
 
     border-radius: 999px;
 }
-
-/* 
-    Text
-*/
-
-.nav-links a {
-
-}
-
-/* h1 {} */
-
-/* 
-    Navigation
-*/
 
 .nav {
     display: flex;
@@ -338,10 +325,7 @@ html, body {
 
 .nav-active {
     transform: translateX(-200px);
-    width: 200px;
 }
-
-/* .nav-links {} */
 
 .options {
     margin-top: 15px;
@@ -353,30 +337,6 @@ html, body {
     background-color: #181818
 }
 
-
-
-/* .options:hover {
-    color: rgba(255, 255, 255, 1);
-    padding-left: 30px;
-} */
-
-
-
-/* #wrapper-card {} */
-
-/* .card {
-    padding: 16px;
-    color: white;
-
-    max-height: 400px;
-    min-width: 300px;
-    flex-shrink: 1;
-    flex-grow: 1;
-    border-radius: 15px;
-
-    transition: 0.2s;
-} */
-
 .card:hover {
     opacity: 0.85;
 }
@@ -385,5 +345,43 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.asideartlist {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,1);
+    width: 200px;
+    top: 69px;
+
+    position: fixed;
+    height: calc(100vh - 69px);
+    z-index: 1;
+    left: 0;
+}
+
+    .moreart {
+        display: flex;
+        flex-direction: row;
+        height: calc(100% - 69px);
+        background-color: rgba(0,0,0,1);
+        flex-wrap: wrap;
+    }
+
+        .asideartitem {
+
+        }
+
+.artcontainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+    #artwork {
+        box-shadow: 10px 10px 18px 0 #0d0c11, -10px 10px 18px 0 #0d0c11;
+        width: fit-content;
+    }
 
 }
