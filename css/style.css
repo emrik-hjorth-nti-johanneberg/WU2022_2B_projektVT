@@ -18,8 +18,8 @@ html, body {
 }
 
     .gridwrap {
-        display: grid;
-        height: 100%;
+        display: flex;
+        height: calc(100% - 69px);
         width: 100%;
         overflow: hidden;
         flex-direction: column;
@@ -27,7 +27,6 @@ html, body {
     }
 
         header {
-            grid-area: he;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -132,10 +131,10 @@ html, body {
             flex-direction: row;
             flex-wrap: wrap;
 
+            height: calc(100% - 69px);
+
             gap: 20px;
             padding: 20px;
-
-            position: relative;
         }
 
 
@@ -199,7 +198,42 @@ html, body {
 
 
 
+/* footer{
+    display: flex;
+    background-color: var(--gray7);
+    width: 100%;
+    height: 40vh;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+}
 
+footer > hr{
+    border: none;
+    border-top: 3px dashed var(--gray5);
+
+}
+
+#footer-hr1{
+    width: 20em;
+}
+#footer-hr2{
+    width: 15em;
+}
+#footer-hr3{
+    width: 10em;
+}
+
+#footer-nav > a{
+    text-decoration: none;
+    margin: .5em;
+
+    color: var(--gray0);
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--font-head);
+    font-weight: 200;
+} */
 
 
 
