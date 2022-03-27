@@ -10,18 +10,18 @@
 }
 
 html, body {
-    height: 100%;
+    height: 200vh;
     width: 100%;
-    
+    overflow-x: hidden;
     background-color: #181818;
     
 }
 
     #gridwrap {
         display: flex;
-        height: calc(100% - 69px);
+        height: calc(100vh - 69px);
         width: 100%;
-        overflow-x: hidden;
+        
         flex-direction: column;
         padding-top: 69px;
     }
