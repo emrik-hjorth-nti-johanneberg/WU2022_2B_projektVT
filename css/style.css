@@ -10,7 +10,6 @@
 }
 
 html, body {
-    height: 200vh;
     width: 100%;
     overflow-x: hidden;
     background-color: #181818;
@@ -19,7 +18,7 @@ html, body {
 
     #gridwrap {
         display: flex;
-        height: calc(50% - 69px);
+        
         width: 100%;
         
         flex-direction: column;
@@ -140,16 +139,43 @@ html, body {
 
 
 .card {
-    padding: 16px;
+    /* padding: 16px; */
     color: white;
 
-    max-height: 400px;
-    min-width: 250px;
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 282px;
+    max-width: 560px;
     flex-shrink: 1;
     flex-grow: 1;
     border-radius: 15px;
 
     transition: 0.2s;
+}
+
+article {
+    position: relative;
+    /* top: 10px; */
+    background-color: rgba(0,0,0,0.3);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 15px;
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 282px;
+    max-width: 560px;
+    transition: 0.2s;
+}
+
+article:hover {
+    padding-bottom: 200px;
+    transition: 0.2s;
+}
+
+.cardtext {
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .background {
@@ -159,27 +185,28 @@ html, body {
 
 .artcard1 {
     background-color: crimson;
-    /* background-image: url(../img/space-background.jpg); */
+    background-image: url(../img/eye.jpg);
+    filter: opacity();
 }
 
 .artcard2 {
     background-color: crimson;
-    background-image: url();
+    background-image: url(../img/monalisa.jpg);
 }
 
 .artcard3 {
     background-color: crimson;
-    background-image: url();
+    background-image: url(../img/fjaeril.jpg);
 }
 
 .artcard4 {
     background-color: crimson;
-    background-image: url();
+    background-image: url(../img/lake.jpg);
 }
 
 .artcard5 {
     background-color: crimson;
-    background-image: url();
+    background-image: url(../img/mountains.jpg);
 }
 
 
@@ -215,67 +242,18 @@ html, body {
 
     #artwork {
         box-shadow: 10px 10px 18px 0 #0d0c11, -10px 10px 18px 0 #0d0c11;
-        width: ;
-        height:fit-content;
+        height: fit-content;
+        object-fit: cover;
+        width: 100%;
     }
     
 .desccontainer {
-    top: 100vh;
+    top: calc(100vh + 69px);
     background-color: #0c0c0c;
     width: 100%;
-    height: 50%;
+    height: calc(100vh - 69px);
+    margin-top: 69px;
 }
-
-
-/* footer{
-    display: flex;
-    background-color: var(--gray7);
-    width: 100%;
-    height: 40vh;
-    gap: 10px;
-    position: relative;
-    flex-direction: column;
-}
-
-footer > hr{
-    border: none;
-    border-top: 3px dashed var(--gray5);
-
-}
-
-#footer-hr1{
-    width: 20em;
-}
-#footer-hr2{
-    width: 15em;
-}
-#footer-hr3{
-    width: 10em;
-}
-
-#footer-nav > a{
-    text-decoration: none;
-    margin: .5em;
-
-    color: var(--gray0);
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: var(--font-head);
-    font-weight: 200;
-} */
-
-
-
-
-
-
-
-        
-
-
-
-
-
 
 
 @media only screen and (min-width: 800px) {
@@ -290,7 +268,6 @@ footer > hr{
 html, body {
     height: calc(200vh - 69px);
     width: 100%;
-    overflow: ;
     background-color: #181818;
 }
 
@@ -305,6 +282,27 @@ html, body {
 
 #gridwrap {
     overflow: visible;
+    height: calc(50% - 69px);
+}
+
+.card {
+    max-height: 332px;
+}
+
+article {
+    position: relative;
+    top: 15px;
+    background-color: rgba(0,0,0,0.5);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 0px;
+    min-height: 10px;
+}
+
+.cardtext {
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .burger:hover {
@@ -361,7 +359,7 @@ html, body {
     top: 69px;
     left: 0;
 
-    position: absolute;
+    position: fixed;
     height: calc(100vh - 69px);
     z-index: 1;
     left: 0;
@@ -369,7 +367,7 @@ html, body {
 
     .moreart {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: calc(100% - 69px);
         background-color: rgba(0,0,0,1);
         flex-wrap: wrap;
@@ -397,10 +395,48 @@ html, body {
 .desccontainer {
     top: 100vh;
     background-color: #0c0c0c;
-    width: calc(100%);
+    width: calc(100% - 200px);
     height: calc(100vh - 69px);
     position: absolute;
+    padding-left: 200px;
     
 }
 
 }
+
+/* footer{
+    display: flex;
+    background-color: var(--gray7);
+    width: 100%;
+    height: 40vh;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+}
+
+footer > hr{
+    border: none;
+    border-top: 3px dashed var(--gray5);
+
+}
+
+#footer-hr1{
+    width: 20em;
+}
+#footer-hr2{
+    width: 15em;
+}
+#footer-hr3{
+    width: 10em;
+}
+
+#footer-nav > a{
+    text-decoration: none;
+    margin: .5em;
+
+    color: var(--gray0);
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--font-head);
+    font-weight: 200;
+} */
