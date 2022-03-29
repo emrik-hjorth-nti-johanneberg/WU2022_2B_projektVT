@@ -167,11 +167,6 @@ article {
     transition: 0.2s;
 }
 
-article:hover {
-    padding-bottom: 200px;
-    transition: 0.2s;
-}
-
 .cardtext {
     position: relative;
     padding-right: 5px;
@@ -233,7 +228,7 @@ article:hover {
 
 .artcontainer {
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     justify-content: center;
     position: relative;
@@ -266,7 +261,7 @@ article:hover {
 }
 
 html, body {
-    height: calc(200vh - 69px);
+    height: calc(100vh);
     width: 100%;
     background-color: #181818;
 }
@@ -287,6 +282,7 @@ html, body {
 
 .card {
     max-height: 332px;
+    min-height: 300px;
 }
 
 article {
@@ -297,6 +293,11 @@ article {
     padding-left: 5px;
     border-radius: 0px;
     min-height: 10px;
+}
+
+article:hover {
+    padding-bottom: 200px;
+    transition: 0.2s;
 }
 
 .cardtext {
@@ -379,27 +380,28 @@ article {
 
 .artcontainer {
     display: flex;
-    min-height: calc(100vh - 69px);
+    min-height: calc(100vh - 288px);
     width: calc(100% - 200px);
     justify-content: center;
     align-items: center;
     position: relative;
     left: 200px;
+    height:auto;
 }
 
     #artwork {
         box-shadow: 10px 10px 18px 0 #0d0c11, -10px 10px 18px 0 #0d0c11;
         width: fit-content;
+        position: relative;
     }
 
 .desccontainer {
-    top: 100vh;
+    top: calc(100vh - 200px);
     background-color: #0c0c0c;
     width: calc(100% - 200px);
     height: calc(100vh - 69px);
     position: absolute;
     padding-left: 200px;
-    
 }
 
 }
