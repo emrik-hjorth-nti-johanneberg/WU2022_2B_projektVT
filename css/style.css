@@ -2,11 +2,24 @@
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     list-style: none;
-    font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
     right: 0;
-    /* font-family: 'San Francisco', Helvetica, Arial, san-serif;  #funkar typ inte */
+}
+
+@font-face {
+    font-family: 'portfolio';
+    src: url(../font/Valorant\ Font.ttf);
+}
+
+@font-face {
+    font-family: 'h2';
+    src: url(../font/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: 'carddesc';
+    src: url(../font/Louis\ George\ Cafe.ttf);
 }
 
 html, body {
@@ -37,12 +50,14 @@ html, body {
             width: 100%;
             z-index: 2;
             margin: 0px;
+            
         }
 
             .title {
                 position: relative;
                 margin-left: 20px;
-                cursor: default;
+                cursor: ;
+                font-family: 'h2';
             }
 
             .burger {
@@ -137,7 +152,13 @@ html, body {
             padding: 20px;
         }
 
+h2 {
+    font-family: 'h2';
+}
 
+p {
+    font-family: 'carddesc';
+}
 
 .card {
     /* padding: 16px; */
@@ -294,17 +315,29 @@ article {
     padding-left: 5px;
     border-radius: 0px;
     min-height: 10px;
+    max-height: 60px;
 }
 
 article:hover {
     padding-bottom: 200px;
     transition: 0.2s;
+    max-height: ;
 }
 
-.cardtext {
+p {
+    padding-bottom: 4px;
+}
+
+.carddesc {
     position: relative;
-    padding-right: 5px;
-    padding-left: 5px;
+    transition: 0.2s;
+    opacity: 0;
+    top: 175px;
+}
+
+article:hover .carddesc {
+    transition: 0.2s;
+    opacity: 1;
 }
 
 .burger:hover {
