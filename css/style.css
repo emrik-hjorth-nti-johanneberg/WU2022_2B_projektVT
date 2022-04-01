@@ -29,7 +29,7 @@ html, body {
     
 }
 
-    #gridwrap {
+    #wrapper {
         display: flex;
         
         width: 100%;
@@ -175,7 +175,69 @@ p {
     transition: 0.2s;
 }
 
-article {
+.contactwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: calc(100% - 69px);
+
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contactcard {
+    background-color: #0c0c0c;
+    color: white;
+
+    min-height: 80px;
+    max-height: 60px;
+    min-width: 282px;
+    max-width: 560px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border-radius: 15px;
+    display: flex;
+
+    transition: 0.2s;
+}
+
+a h1 {
+    position: absolute ;
+    left: 10%;
+    font-family: 'h2';
+}
+
+.contactcard {
+    background-color: #0c0c0c;
+    color: white;
+
+    min-height: 80px;
+    max-height: 100px;
+    min-width: 442px;
+    max-width: 560px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border-radius: 15px;
+
+    transition: 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contacticon {
+    height: auto;
+    width: 80px;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 10px;
+    position: relative;
+}
+
+.artcardarticle {
     position: relative;
     /* top: 10px; */
     background-color: rgba(0,0,0,0.3);
@@ -297,7 +359,7 @@ html, body {
     margin: 0;
 }
 
-#gridwrap {
+#wrapper {
     overflow: visible;
     height: calc(50% - 69px);
 }
@@ -307,7 +369,31 @@ html, body {
     min-height: 300px;
 }
 
-article {
+.contactwrap {
+    overflow: visible;
+}
+
+.contactcard {
+    min-height: 200px;
+    max-height: 300px;
+    min-width: 0;
+    max-width: 921.5px;
+    width: 921.5px;
+}
+
+a h1 {
+    position: relative;
+    left: -40%;
+}
+
+.contacticon {
+    height: calc(100% - 20px);
+    width: 230px;
+}
+
+
+
+.artcardarticle {
     position: relative;
     top: 15px;
     background-color: rgba(0,0,0,0.5);
@@ -318,10 +404,9 @@ article {
     max-height: 60px;
 }
 
-article:hover {
+.artcardarticle:hover {
     padding-bottom: 200px;
     transition: 0.2s;
-    max-height: ;
 }
 
 p {
@@ -335,7 +420,7 @@ p {
     top: 175px;
 }
 
-article:hover .carddesc {
+.artcardarticle:hover .carddesc {
     transition: 0.2s;
     opacity: 1;
 }
@@ -379,11 +464,6 @@ article:hover .carddesc {
 
 .card:hover {
     opacity: 0.85;
-}
-
-.background {
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .asideartlist {
