@@ -56,7 +56,6 @@ html, body {
             .title {
                 position: relative;
                 margin-left: 20px;
-                cursor: ;
                 font-family: 'h2';
             }
 
@@ -161,7 +160,6 @@ p {
 }
 
 .card {
-    /* padding: 16px; */
     color: white;
 
     min-height: 100px;
@@ -215,7 +213,7 @@ a h1 {
 
     min-height: 80px;
     max-height: 100px;
-    min-width: 442px;
+    min-width: 242px;
     max-width: 560px;
     flex-shrink: 1;
     flex-grow: 1;
@@ -239,7 +237,6 @@ a h1 {
 
 .artcardarticle {
     position: relative;
-    /* top: 10px; */
     background-color: rgba(0,0,0,0.3);
     padding-right: 5px;
     padding-left: 5px;
@@ -265,7 +262,6 @@ a h1 {
 .artcard1 {
     background-color: crimson;
     background-image: url(../img/eye.jpg);
-    filter: opacity();
 }
 
 .artcard2 {
@@ -312,7 +308,6 @@ a h1 {
 
 .artcontainer {
     display: flex;
-    /* height: 100%; */
     width: 100%;
     justify-content: center;
     position: relative;
@@ -475,7 +470,7 @@ p {
     left: 0;
 
     position: fixed;
-    height: calc(100vh - 69px);
+    height: calc(100vh);
     z-index: 1;
     left: 0;
     overflow: visible;
@@ -490,14 +485,9 @@ p {
     .moreart {
         display: flex;
         flex-direction: column;
-        /* height: calc(50% - 69px); */
         background-color: rgba(0,0,0,1);
-        /* flex-wrap: wrap; */
-        /* gap: 10px; */
         gap: 10px;
         margin-top: 10px;
-        max-height: calc(50vh - 69/2px);
-        
     }
 
         .moreart h2 {
@@ -572,40 +562,3 @@ p {
 }
 
 }
-
-/* footer{
-    display: flex;
-    background-color: var(--gray7);
-    width: 100%;
-    height: 40vh;
-    gap: 10px;
-    position: relative;
-    flex-direction: column;
-}
-
-footer > hr{
-    border: none;
-    border-top: 3px dashed var(--gray5);
-
-}
-
-#footer-hr1{
-    width: 20em;
-}
-#footer-hr2{
-    width: 15em;
-}
-#footer-hr3{
-    width: 10em;
-}
-
-#footer-nav > a{
-    text-decoration: none;
-    margin: .5em;
-
-    color: var(--gray0);
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: var(--font-head);
-    font-weight: 200;
-} */
