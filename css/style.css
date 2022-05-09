@@ -29,6 +29,10 @@ html, body {
     
 }
 
+#squarePfp {
+    border-radius: 3px;
+}
+
     #wrapper {
         display: flex;
         
@@ -179,6 +183,17 @@ p {
     transition: 0.2s;
 }
 
+.posttitle {
+
+}
+
+.postgenre {}
+
+.postdesc {
+
+}
+
+
 .contactwrap {
     display: flex;
     flex-direction: row;
@@ -207,7 +222,7 @@ p {
     transition: 0.2s;
 }
 
-a h1 {
+a h2 {
     position: absolute ;
     left: 10%;
     font-family: 'h2';
@@ -279,7 +294,7 @@ a h1 {
 
 .artcard3 {
     background-color: crimson;
-    background-image: url(../img/fjaeril.jpg);
+    background-image: url(../img/portal.png);
     max-width: 400px;
 }
 
@@ -389,9 +404,16 @@ html, body {
     width: 921.5px;
 }
 
-a h1 {
+a h2 {
     position: relative;
     left: -40%;
+    display: block; 
+    font-size: 2em; 
+    margin-top: 0.67em; 
+    margin-bottom: 0.67em; 
+    margin-left: 0; 
+    margin-right: 0; 
+    font-weight: bold;
 }
 
 .contacticon {
