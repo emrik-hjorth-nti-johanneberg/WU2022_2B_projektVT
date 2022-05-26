@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.nav')
-const gridwrap = document.querySelector('.gridwrap')
+const save = document.querySelector('.save')
 
 function toggleMenu() {
     nav.classList.toggle('nav-active')
@@ -8,4 +8,12 @@ function toggleMenu() {
 }
 
 burger.addEventListener('click', toggleMenu)
+
+function buttonpress() {
+    save.classList.toggle('saved')
+}
+
+save.addEventListener('click', buttonpress)
+
+
  
